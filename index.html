@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Darpan's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        header, section, footer {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: darkgreen;
+        }
+
+        img {
+            width: 250px;
+            max-width: 100%;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .project {
+            background-color: #e8f0e8;
+            padding: 12px;
+            border: 1px solid #b7cbb7;
+            flex: 1 1 200px;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                margin: 8px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Darpan's Portfolio</h1>
+        <nav>
+            <a href="#about">About me</a>
+            <a href="#projects">My projects</a>
+            <a href="#layout">Layout</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About me</h2>
+        <p>Hello! My name is Darpan. I study Industrial Information Technology at LAB University of Applied Sciences.</p>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Computer circuit board">
+    </section>
+
+    <section id="projects">
+        <h2>My projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Python guessing game</h3>
+                <p>A small game where the player guesses a number.</p>
+            </div>
+            <div class="project">
+                <h3>HTML form</h3>
+                <p>A page with text boxes, buttons, and a form.</p>
+            </div>
+            <div class="project">
+                <h3>Automation presentation</h3>
+                <p>A presentation about the steps in an automation project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="layout">
+        <h2>How I used Flexbox</h2>
+        <ul>
+            <li><code>display: flex</code> puts the links or project boxes in a row.</li>
+            <li><code>gap</code> adds space between the items.</li>
+            <li><code>flex-wrap: wrap</code> moves items to a new line when there is not enough space.</li>
+            <li>The media query changes the navigation to a column on a small screen.</li>
+        </ul>
+        <p>I used Flexbox because it helps arrange items and lets them move to fit the screen.</p>
+    </section>
+
+    <footer>
+        <p>My student portfolio - 2026</p>
+    </footer>
+</body>
+</html>
